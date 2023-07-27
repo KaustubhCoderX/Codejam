@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(20, 20, 20);
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Space Grotesk', sans-serif; /*normal*/
+    font-family: 'Space Mono', monospace;   /*headings*/
+    color: white;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+}
+
+
+/* Navabr */
+.navbar {
+    position: fixed;
+    width: 100vw;
+    height: 100vw;
+    background: rgba(213, 213, 213, 0.8);
+    backdrop-filter:blur(2px);
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar-contents {
+    margin: 3px;
+    width: 50vw;
+    height: 99vh;
+    border-radius: 30px;
+    background-color: rgb(144, 144, 144);
+}
+
+
+
+.navbar > .button {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 200px;
+    background-color: aliceblue;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+}
