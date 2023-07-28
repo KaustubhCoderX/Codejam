@@ -1,4 +1,6 @@
 .So-Sy{
+    transform-origin: center;
+    transform-style: preserve-3d;
     height: 100%;
     width:100%;
     z-index: 1;
@@ -78,16 +80,13 @@
     filter: contrast(0.85);
 }
 
-.asteroid-belt #belt-1{ /*why no double images?*/
+.asteroid-belt #belt-2{ /*why no double images?*/
     position: absolute;
-    left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    filter: contrast(0.85);
+    filter: contrast(0.8);
 }
 
 .orbit-5{
