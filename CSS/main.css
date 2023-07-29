@@ -22,7 +22,7 @@ body {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: rgba(28, 28, 28, 0.9);
+    background: rgba(28, 28, 28, 0.4);
     backdrop-filter:blur(2px);
     margin: 0;
     padding: 0;
@@ -32,7 +32,8 @@ body {
     width: 3vw;
     height: 3vw;
     border-radius: 200px;
-    background-color: aliceblue;
+    background-color: rgba(26, 26, 26, 0.2);
+    backdrop-filter: blur(4px);
     position: fixed;
     top: 20px;
     left: 20px;
@@ -54,7 +55,7 @@ body {
     margin: 3px;
     width: 50vw;
     height: 99vh;
-    border-radius: 30px;
+    border-radius: 1.5vw;
     background-color: rgb(46, 46, 46);
     overflow: hidden;
     display: grid;
@@ -63,13 +64,15 @@ body {
 }
 
 .navbar-contents > .hacky {
-    font-size: 80px;
+    font-size: 5vw;
     margin: 1px 0px;
     left: 10%;
     text-align: left;
     transition: ease-in-out 0.5s;
     padding: 0;
     padding-left: calc(3vw + 20px);
+    display: flex;
+    align-items: center;
 }
 
 .navbar-contents > .hacky:hover {
