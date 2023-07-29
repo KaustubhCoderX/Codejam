@@ -41,4 +41,28 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     });
   };
 
+// menu
+
+document.addEventListener('DOMContentLoaded', () => {
+  const navbar = document.querySelector('.navbar');
+  const navbarContents = document.querySelector('.navbar-contents');
+  const button = document.querySelector('.button');
+
+  if (!navbar || !navbarContents || !button) {
+    console.error("Navbar, navbar-contents, or button element not found.");
+    return;
+  }
+
+  let isOpen = false; // Flag to keep track of the navbar state
+
+  button.addEventListener('click', () => {
+    // Toggle the navbar and its contents based on the isOpen flag
+    isOpen = !isOpen;
+    navbar.style.opacity = isOpen ? '1' : '0';
+    navbarContents.style.visibility = isOpen ? 'visible' : 'hidden';
+  });
+});
+
+
+
 

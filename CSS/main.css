@@ -13,35 +13,39 @@ body {
     margin: 0 auto;
     text-align: center;
     padding: 0;
+    position: relative;
 }
 
 
 /* Navabr */
 .navbar {
+    z-index: 10000;
     font-family: 'Space Mono', monospace;
     position: fixed;
+    opacity: 0;
     width: 100vw;
     height: 100vh;
     background: rgba(28, 28, 28, 0.4);
-    backdrop-filter:blur(2px);
+    backdrop-filter:blur(10px);
     margin: 0;
     padding: 0;
 }
 
-.navbar > .button {
+.button {
+    z-index: 10001;
     width: 3vw;
     height: 3vw;
     border-radius: 200px;
     background-color: rgba(26, 26, 26, 0.2);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(20px);
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 0.6vw;
+    left: 0.6vw;
     margin: 0;
     overflow: hidden;
 }
 
-.navbar > .button > img {
+.button > img {
     position: absolute;
     width: 75%;
     height: 75%;
