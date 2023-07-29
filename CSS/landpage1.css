@@ -1,0 +1,30 @@
+.isronameplate {
+    font-family:'Space Mono', monospace;
+    font-size: 8vw;
+    background-color: aqua;
+    overflow: hidden;
+    height: auto;
+    width: 30vw;
+}
+
+.isronameplate > span {
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin: -20px;
+    opacity: 0;
+    animation: dropIn 0.4s forwards;
+    animation-delay: calc(var(--order)* 100ms);
+    animation-timing-function: cubic-bezier(0,1.28,.92,.93);
+}
+
+@keyframes dropIn {
+    0% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
