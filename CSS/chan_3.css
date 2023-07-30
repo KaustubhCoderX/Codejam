@@ -293,7 +293,7 @@ html{
 }
 
 .intro img{
-    transform: translate(-15%);
+    transform: translate(-20%);
     border-radius: 39% 86% 52% 83% / 60% 48% 45% 72% ;
     transition: .3s ease-in-out;
 }
@@ -305,4 +305,12 @@ html{
 .intro{
     display: flex;
     flex-direction: row;
+}
+
+/*media queries*/
+
+@media only screen and (max-width:845px) {
+    .chan-3 .img{
+        background-image: linear-gradient(to top, black, transparent), url(./images/chan-3-mobile.jpg);
+    }
 }
