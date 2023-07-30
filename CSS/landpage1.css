@@ -2,6 +2,9 @@
   position: relative;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
+  border-radius: 0px 0px 30px 30px;
+  background-color: black;
 }
 
 .isronameplate {
@@ -53,6 +56,46 @@
   height: 100vh;
   object-fit: cover;
 }
+
+.isro-about {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.isro-about > h1 {
+  text-align: left;
+  font-size: 60px;
+  padding: 0;
+  display: grid;
+  align-items: top;
+  font-family: 'Space Mono', monospace;
+}
+
+.isro-about > p {
+  text-align: justify;
+  width: 55%;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes dropIn {
     0% {

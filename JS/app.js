@@ -43,25 +43,30 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 // menu
 
-document.addEventListener('DOMContentLoaded', () => {
-  const navbar = document.querySelector('.navbar');
-  const navbarContents = document.querySelector('.navbar-contents');
-  const button = document.querySelector('.button');
+// Get references to the elements
+const navbar = document.querySelector('.navbar');
+const button = document.querySelector('.button');
 
-  if (!navbar || !navbarContents || !button) {
-    console.error("Navbar, navbar-contents, or button element not found.");
-    return;
+// Define a variable to keep track of the navbar state
+let isNavbarExpanded = false;
+
+// Function to toggle the navbar's height and width
+function toggleNavbar() {
+  if (isNavbarExpanded) {
+    // If the navbar is already expanded, collapse it
+    navbar.style.height = '0';
+    navbar.style.width = '0';
+  } else {
+    // If the navbar is not expanded, expand it to full screen
+    navbar.style.height = '100vh';
+    navbar.style.width = '100vw';
   }
+  // Toggle the state
+  isNavbarExpanded = !isNavbarExpanded;
+}
 
-  let isOpen = false; // Flag to keep track of the navbar state
-
-  button.addEventListener('click', () => {
-    // Toggle the navbar and its contents based on the isOpen flag
-    isOpen = !isOpen;
-    navbar.style.opacity = isOpen ? '1' : '0';
-    navbarContents.style.visibility = isOpen ? 'visible' : 'hidden';
-  });
-});
+// Add a click event listener to the button to toggle the navbar
+button.addEventListener('click', toggleNavbar);
 
 
 
