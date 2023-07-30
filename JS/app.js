@@ -2,7 +2,6 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let intervals = {};
 
   window.onload = function () {
-   
     const hackyElements = document.querySelectorAll('.hacky');
 
 
