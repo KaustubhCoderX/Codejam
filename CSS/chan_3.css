@@ -311,6 +311,6 @@ html{
 
 @media only screen and (max-width:845px) {
     .chan-3 .img{
-        background-image: linear-gradient(to top, black, transparent), url(./images/chan-3-mobile.jpg);
+        background-image: linear-gradient(to top, black, transparent), url(Codejam/images/chan-3-mobile.jpg);
     }
 }
