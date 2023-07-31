@@ -207,7 +207,7 @@
 .planet {
 display: inline-block;
 width: 400px;
-height: 70vh;
+height: 90vh;
 text-align: left;
 background-color: rgb(25, 25, 25);
 border-radius: 20px;
@@ -217,7 +217,7 @@ position: relative;
 
 .img {
 width: 100%;
-height: 60vh;
+height: 80vh;
 overflow: hidden;
 display: grid;
 place-items: center;

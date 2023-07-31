@@ -6,6 +6,7 @@
     background-color: rgb(0, 0, 0);
     overflow: hidden;
     position: relative;
+    z-index: 4;
 }
 
 .intro-img{
@@ -16,7 +17,44 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    z-index: 5;
 }
+
+.intro-text > h1 {
+    font-weight: 400;
+    font-size: 100px;
+    font-family: 'Space Mono', monospace;   /*headings*/
+    margin: 0;
+    padding: 0;
+}
+
+.intro-text > p {
+    font-family: 'Space Grotesk', sans-serif; /*normal*/
+    margin: 0;
+    padding: 0;
+    mix-blend-mode: difference;
+}
+
+.intro-text {
+    z-index: 6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .planets {
     width: 80%;
