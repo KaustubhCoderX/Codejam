@@ -321,176 +321,174 @@ strong{
 
   /* Media query for screens with a maximum width of 768px (e.g., tablets and phones) */
 /* Default styles for all screen sizes */
-  
-  /* Media query for screens with a maximum width of 768px (e.g., tablets and phones) */
-  @media screen and (max-width: 768px) {
-    .load-screen {
-      display: none; /* Hide the load screen on phones */
-    }
-  
-    .after-math {
-      display: block; /* Show the main content on phones */
-      animation: landSlideEnder .5s linear forwards .5s;
-    }
-  
-    .content-main {
-      position: static; /* Reset the position for phones */
-      margin-top: 20px; /* Add some spacing to the top of the content */
-    }
-  
-    .intro {
-      flex-direction: column; /* Change the layout to vertical */
-      align-items: center; /* Center the items vertically */
-    }
-  
-    .para-1 {
-      width: 90%; /* Adjust the width for smaller screens */
-      font-size: 130%; /* Decrease the font size for better readability */
-    }
-  
-    .intro img {
-      max-width: 100%; /* Ensure the image doesn't overflow on small screens */
-      border-radius: 50%; /* Make the image circular for better aesthetics */
-      transition: .3s ease-in-out;
-    }
-  
-    .scrollbar {
-      display: none; /* Hide the scrollbar on phones */
-    }
-  }
-  
+
+/* Media query for screens with a maximum width of 768px (e.g., tablets and phones) */
+@media screen and (max-width: 768px) {
+.load-screen {
+    display: none; /* Hide the load screen on phones */
+}
+
+.after-math {
+    display: block; /* Show the main content on phones */
+    animation: landSlideEnder .5s linear forwards .5s;
+}
+
+.content-main {
+    position: static; /* Reset the position for phones */
+    margin-top: 20px; /* Add some spacing to the top of the content */
+}
+
+.intro {
+    flex-direction: column; /* Change the layout to vertical */
+    align-items: center; /* Center the items vertically */
+}
+
+.para-1 {
+    width: 90%; /* Adjust the width for smaller screens */
+    font-size: 130%; /* Decrease the font size for better readability */
+}
+
+.intro img {
+    max-width: 100%; /* Ensure the image doesn't overflow on small screens */
+    border-radius: 50%; /* Make the image circular for better aesthetics */
+    transition: .3s ease-in-out;
+}
+
+.scrollbar {
+    display: none; /* Hide the scrollbar on phones */
+}
+}
 
 
+.div > h2 {
+color: black;
+margin-bottom : 0.3rem;
+font-family: 'Space Mono', monospace;
+text-align: left;
+margin: 2px;
+}
 
+.div > p {
+color: black;
+font-family: 'Space Grotesk', sans-serif;
+text-align: left;
+}
 
+.timeline {
+margin: 5em 20em;
+max-width: 34.15rem;
+}
 
+.checkpoint {
+max-width: 34rem;
+padding-top: 2em;
+padding-bottom: 2em;
+position: relative;
+}
 
+.checkpoint div {
+border-radius: 1em;
+padding: 1.5em;
+background: linear-gradient(147deg, #FFF 0%, #bababa 100%);
+}
 
+.checkpoint .div > p {
+line-height: 27px;
+font-size: 2rem;
+color: black;
+}
 
+.checkpoint:nth-child(odd) {
+border-left: 3px solid white ;
+padding-left: 3em;
+transform: translateX(-17em);
+}
 
+.checkpoint:nth-child(even) {
+border-left: 3px solid white;
+padding-left: 3em;
+transform: translatex(-17em);
+}
 
+.checkpoint:nth-child(even)::after , .checkpoint:nth-child(odd)::before {
+content: '';
+background: rgb(255, 255, 255);
+width: 3em;
+height: 3px;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+}
 
+.checkpoint:nth-child(odd)::before {
+left: 0;
+}
 
+.checkpoint:nth-child(even)::after {
+left: 0;
+}
 
+.checkpoint:nth-child(odd) div::before , 
+.checkpoint:nth-child(even) div::after {
+content: '';
+background-color: #ffffff;
+width: 0.8em;
+height: 0.8em;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+border-radius: 50%;
+}
 
+.checkpoint:nth-child(odd) div::before {
+left: -0.5em;
+}
 
+.checkpoint:nth-child(even) div::after {
+left: -0.5em;
+}
 
+.paragraph{
+font-size: 150%;
+}
 
-
-
-
-
-
-
-  .div > h2 {
-    color: black;
-    margin-bottom : 0.5rem;
-    font-family: 'Space Mono', monospace;
-    text-align: left;
-  }
-  
-  .div > p {
-    font-family: 'Space Grotesk', sans-serif;
-    text-align: left;
-  }
-  
-  .timeline {
-    margin: 5em auto;
-    max-width: 34.15rem;
-  }
-  
-  .checkpoint {
-    max-width: 34rem;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    position: relative;
-  }
-  
-  .checkpoint div {
-    border-radius: 1em;
-    padding: 1.5em;
-    background: linear-gradient(147deg, #FFF 0%, #bababa 100%);
-  }
-  
-  .checkpoint .div > p {
-    line-height: 27px;
-    color: rgb(0, 0, 0);
-  }
-  
-  .checkpoint:nth-child(odd) {
-    border-left: 3px solid white ;
-    padding-left: 3em;
-    transform: translateX(17em);
-  }
-  
-  .checkpoint:nth-child(even) {
-    border-right: 3px solid white;
-    padding-right: 3em;
-    transform: translatex(-17em);
-  }
-  
-  .checkpoint:nth-child(even)::before , .checkpoint:nth-child(odd)::before {
+.checkpoint::before{
     content: '';
-    background: white;
-    width: 3em;
-    height: 3px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .checkpoint:nth-child(odd)::before {
-    left: 0;
-  }
-  
-  .checkpoint:nth-child(even)::before {
-    right: 0;
-  }
-  
-  .checkpoint:nth-child(odd) div::before , 
-  .checkpoint:nth-child(even) div::before {
-    content: '';
-    background-color: #fefefe;
     width: 0.8em;
+    background-color: aqua;
     height: 0.8em;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-  }
-  
-  .checkpoint:nth-child(odd) div::before {
-    left: -0.5em;
-  }
-  
-  .checkpoint:nth-child(even) div::before {
-    right: -0.5em;
-  }
-  
-  @media screen and (max-width: 1150px) {
-    .timeline {
-      width: 80vw;
-    }
-  
-    .timeline .checkpoint {
-      width: 100%;
-      transform: none;
-      padding-left: 0;
-      padding-right: 0;
-      border: none;
-    }
-  
-    .timeline .checkpoint::before {
-      width: 3px;
-      height: 4em;
-      top: -2em;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  
-    .timeline .checkpoint div::before {
-      top: -0.5em;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
+}
+
+.timeline strong{
+    position: relative;
+    left: 10%;
+}
+
+@media screen and (max-width: 1150px) {
+.timeline {
+    width: 80vw;
+}
+
+.timeline .checkpoint {
+    width: 100%;
+    transform: none;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+}
+
+.timeline .checkpoint::before {
+    width: 3px;
+    height: 4em;
+    top: -2em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline .checkpoint div::before {
+    top: -0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+}
+
