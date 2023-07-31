@@ -283,21 +283,21 @@ html::-webkit-scrollbar{
     left: 5%;
 }
 
-.content-main strong{
+strong{
     font-size: 175%;
 }
 
 .para-1{
-    padding-top: 5px;
-    font-size: 150%;
     z-index: 5;
     width: 60%;
     height: min-content;
     overflow-wrap: break-word;
 }
 
-.intro img{
-    transform: translate(-20%);
+.intro .image-1, #image-2{
+    height: 80%;
+    aspect-ratio: 25/24;
+    transform: translate(-40%);
     border-radius: 39% 86% 52% 83% / 60% 48% 45% 72% ;
     transition: .3s ease-in-out;
 }
