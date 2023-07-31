@@ -195,8 +195,61 @@
     left: 50%;
     transform: translateX(-50%);
   }
-
 }
+
+/* planets */
+
+.planets {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.planets > .planet {
+  display: inline-block;
+  width: 25vw;
+  height: 70vh;
+  text-align: left;
+  background-color: rgb(25, 25, 25);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.img {
+  width: 25vw;
+  height: 60vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.img-2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(0);
+  transition: ease 0.5s;
+}
+
+.planets > .planet > h1 {
+  padding: 0;
+  margin: 0 0.5vw;
+  font-family: 'Space Mono', monospace;   /*headings*/
+}
+
+
+.planets > .planet > p {
+  padding: 0;
+  margin: 0 0.5vw;
+  font-family: 'Space Grotesk', sans-serif; /*normal*/
+}
+
+.planet:hover .img-2{
+  filter: blur(2px);
+  width: 105%;
+  height: 105%;
+}
+
+
 
 
 
