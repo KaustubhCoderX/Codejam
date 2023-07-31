@@ -1,0 +1,20 @@
+h1 {
+    text-align: right;
+    font-size: 5.2vw;
+    margin: 0;
+    padding: 0;
+}
+
+.links {
+    height: 100vh;
+    width: 100vh;
+    margin: 0 auto;
+    display: grid;
+}
+
+h1:hover {
+    color: antiquewhite;
+}
+
+
+

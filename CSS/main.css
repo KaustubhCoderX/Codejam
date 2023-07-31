@@ -120,7 +120,8 @@ a {
     display: flex;
     align-items: center;
 }
-.hacky {
+
+#hacky {
     display: flex;
     align-items: center;
     width: 100%;
