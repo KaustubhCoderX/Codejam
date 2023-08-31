@@ -1,7 +1,9 @@
 body {
+    position: relative;
     background-color: rgb(20, 20, 20);
     height: 100vh;
     width: 100vw;
+    margin: 0;
     overflow-x: hidden;
     font-family: 'Space Grotesk', sans-serif; /*normal*/
     font-family: 'Space Mono', monospace;   /*headings*/
@@ -38,7 +40,6 @@ a:hover {
 
 
 
-
 ::-webkit-scrollbar-track {
     background-color: transparent;
 }
@@ -47,6 +48,7 @@ a:hover {
     background-color: rgba(127, 127, 127, 0.6);
     background-clip: padding-box;
     border-width: 2px;
+    
     border-style: solid;
     border-color: transparent;
     border-image: initial;
@@ -101,17 +103,20 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    margin: 0;
 }
 
 .navbar-contents {
-    margin: 3px;
+    z-index: 10001;
+    margin: 0;
     width: 50vw;
-    height: 99vh;
+    height: 100vh;
     border-radius: 1.5vw;
     background-color: rgb(46, 46, 46);
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr;
+    position: relative;
 }
 
 a {

@@ -211,6 +211,7 @@ and some fun facts
 .facts > h1, h2 {
   font-family: 'Space Mono', monospace;
   text-align: left;
+  margin: 0;
 }
 
 .facts > p {
