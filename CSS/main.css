@@ -5,8 +5,6 @@ body {
     width: 100vw;
     margin: 0;
     overflow-x: hidden;
-    font-family: 'Space Grotesk', sans-serif; /*normal*/
-    font-family: 'Space Mono', monospace;   /*headings*/
     color: white;
     margin: 0;
     cursor: default;
