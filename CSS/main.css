@@ -14,6 +14,14 @@ body {
     user-select: none;
 }
 
+h1, h2, h3, h4, h6 {
+    font-family: 'Space Mono', monospace;
+}
+
+p {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
 .container {
     margin: 0 auto;
     text-align: center;
@@ -84,6 +92,8 @@ a:hover {
     z-index: 10001;
     width: 3vw;
     height: 3vw;
+    min-width: 40px;
+    min-height: 40px;
     border-radius: 200px;
     background-color: rgba(26, 26, 26, 0.2);
     backdrop-filter: blur(20px);
@@ -118,7 +128,7 @@ a:hover {
 }
 
 a {
-    font-size: 5vw;
+    font-size: clamp(50px, 5vw, 100px);
     margin: 1px 0px;
     left: 10%;
     text-align: left;
@@ -138,6 +148,17 @@ a {
 .navbar-contents > a:hover{
     background-color: antiquewhite;
     color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar-contents {
+        width: 100vw;
+        height: 80vh;
+        border-radius: 0;
+    }
+    .trailer {
+        display: none;
+    }
 }
 
 /* trailer */
@@ -160,6 +181,12 @@ a {
 
 body:hover .trailer {
     opacity: 1;
+}
+
+/* hax */
+
+.margin-hack {
+    height: 0.9vh;
 }
 
 
