@@ -17,6 +17,19 @@
 
      
     <script defer src="./JS/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script>const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+          console.log(e)
+        })
+        
+        function raf(time) {
+          lenis.raf(time)
+          requestAnimationFrame(raf)
+        }
+        
+        requestAnimationFrame(raf)</script>
     
 </head>
 <body>
@@ -40,7 +53,7 @@
 
     <div class="container">
         <div class="margin-hack"></div><div class="intro-img-container">
-            <img class="intro-img" src="https://earth.esa.int/documents/20142/875203/CARTOSAT_510_300.jpg/afe3f747-9f1d-e231-1833-fc31f9e3ca20?t=1556704071677" alt="get internet noob">
+            <img class="intro-img" src="./images/earth.jpg" alt="get internet noob">
             <div class="intro-text">
                 <h1>Earth</h1>
                 <p>Blue Beautiful Orb</p>
