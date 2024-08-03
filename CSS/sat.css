@@ -215,3 +215,12 @@
   font-family: 'Space Grotesk', sans-serif;
   text-align: justify;
 }
+
+/* link-box */
+
+.link-box {
+  width: 80%;
+  height: 10vh;
+  margin: 0 auto;
+  background-color: royalblue;
+}
